@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#70BDC6"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="Conversor de Divisas"
+        android:textColor="#333333"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etDolares"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#AC5151"
+        android:hint="Ingresa cantidad en USD"
+        android:inputType="numberDecimal"
+        android:padding="16dp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="8dp"
+        android:text="Selecciona moneda destino:" />
+
+    <Spinner
+        android:id="@+id/spMoneda"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#DA8D75"
+        android:entries="@array/monedas_array" />
+
+    <Button
+        android:id="@+id/btnConvertir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:padding="16dp"
+        android:text="CONVERTIR AHORA"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="0.00"
+        android:textColor="#009688"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

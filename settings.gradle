@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "ConversorDivisas_palomo_zambrano_jose_manuel"
