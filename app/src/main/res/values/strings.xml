@@ -1,11 +1,29 @@
 <resources>
-    <string name="app_name">ConversorDivisas_palomo_zambrano_jose_manuel</string>
+    <string name="app_name">Fluxo</string>
 
     <string-array name="monedas_array">
         <item>EUR</item>
+        <item>GBP</item>
+        <item>JPY</item>
+        <item>CAD</item>
+        <item>AUD</item>
+        <item>CHF</item>
+        <item>CNY</item>
         <item>MXN</item>
         <item>COP</item>
         <item>ARS</item>
+        <item>BRL</item>
+        <item>CLP</item>
+        <item>PEN</item>
+        <item>UYU</item>
+        <item>VES</item>
+        <item>BOB</item>
+        <item>CRC</item>
+        <item>DOP</item>
+        <item>PYG</item>
+        <item>RUB</item>
+        <item>INR</item>
+        <item>KRW</item>
+        <item>BTC</item>
     </string-array>
-
 </resources>

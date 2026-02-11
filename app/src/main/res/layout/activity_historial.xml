@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F0F2F5"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Historial Reciente"
+        android:textColor="#1A237E"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Últimas operaciones"
+                android:background="#E8EAF6"
+                android:textColor="#3F51B5"
+                android:padding="12dp"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:textSize="12sp"/>
+
+            <ListView
+                android:id="@+id/listaHistorial"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#6791E6"
+                android:clipToPadding="false"
+                android:divider="#EEEEEE"
+                android:dividerHeight="1dp"
+                android:padding="8dp"
+                android:scrollbarStyle="outsideOverlay" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnBorrarHistorial"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="BORRAR TODO EL HISTORIAL"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:backgroundTint="#D32F2F"
+        android:layout_marginTop="16dp"
+        app:cornerRadius="12dp"
+        app:icon="@android:drawable/ic_menu_delete"
+        app:iconGravity="textStart"
+        app:iconPadding="8dp"/>
+</LinearLayout>
